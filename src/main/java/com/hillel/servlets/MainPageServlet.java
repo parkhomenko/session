@@ -19,6 +19,8 @@ public class MainPageServlet extends HttpServlet {
     HttpSession session = req.getSession();
     User user = (User) session.getAttribute("user");
 
+    //session.setMaxInactiveInterval(60);
+
     PrintWriter printWriter = resp.getWriter();
     printWriter.println(user.getAge());
   }
