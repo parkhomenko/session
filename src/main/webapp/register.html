@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form action="/context/register" method="post">
+      <table>
+        <tr>
+          <td>Login: </td>
+          <td><input type="text" name="login"/></td>
+        </tr>
+        <tr>
+          <td>Password: </td>
+          <td><input type="password" name="password"/></td>
+        </tr>
+        <tr>
+          <td>Gender: </td>
+          <td>
+            <input type="radio" name="gender" value="Male" checked/>
+            <input type="radio" name="gender" value="Female"/>
+          </td>
+        </tr>
+        <tr>
+          <td>Interests: </td>
+          <td>
+            <input type="checkbox" name="hobbies" value="Movies"/>
+            <input type="checkbox" name="hobbies" value="Music"/>
+            <input type="checkbox" name="hobbies" value="Sports"/>
+          </td>
+        </tr>
+        <tr>
+          <td>Country: </td>
+          <td>
+            <select name="country">
+              <option value="Ukraine">Ukraine</option>
+              <option value="USA">USA</option>
+              <option value="England">England</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>
+            <input type="submit" value="Register" name="btnRegister"/>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
